@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/buildSrc" name="buildSrc">
+                <projects>
+                  <project path="$PROJECT_DIR$/buildSrc" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/base" />
+            <option value="$PROJECT_DIR$/base/data" />
+            <option value="$PROJECT_DIR$/base/data/network" />
+            <option value="$PROJECT_DIR$/base/data/network/api" />
+            <option value="$PROJECT_DIR$/base/data/network/impl" />
+            <option value="$PROJECT_DIR$/base/domain" />
+            <option value="$PROJECT_DIR$/buildSrc" />
+            <option value="$PROJECT_DIR$/libraries" />
+            <option value="$PROJECT_DIR$/libraries/android" />
+            <option value="$PROJECT_DIR$/libraries/di" />
+            <option value="$PROJECT_DIR$/libraries/kotlin" />
+            <option value="$PROJECT_DIR$/libraries/kotlin/api" />
+            <option value="$PROJECT_DIR$/libraries/kotlin/impl" />
+            <option value="$PROJECT_DIR$/libraries/resources" />
+            <option value="$PROJECT_DIR$/module_injector" />
+          </set>
+        </option>
+        <option name="resolveExternalAnnotations" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

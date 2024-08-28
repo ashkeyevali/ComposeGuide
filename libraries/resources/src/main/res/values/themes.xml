@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Homebank" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorSecondary">@color/primaryColor</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorError">@color/error</item>
+
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/primaryColor</item>
+        <item name="colorOnBackground">@color/primaryTextColor</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorOnSurface">@color/primaryTextColor</item>
+
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="android:textColorSecondary">@color/secondaryTextColor</item>
+        <item name="android:textColorTertiary">@color/tertiaryTextColor</item>
+
+        <item name="colorControlNormal">#99A3B3</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <!--<item name="colorControlActivated">#00A9FF</item>-->
+        <!--<item name="colorControlHighlight">#99A3B3</item>-->
+        <!--<item name="colorControlNormal">@color/colorControlNormal</item>-->
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+</resources>

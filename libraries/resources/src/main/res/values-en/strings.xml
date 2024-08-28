@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="all_empty_form">Please fill in the blank spaces</string>
+    <string name="all_generic_error">Error occurred. Please, try again later</string>
+    <string name="all_next">Next</string>
+    <string name="all_skip">Skip</string>
+    <string name="all_change">Change</string>
+    <string name="all_cancel">Cancel</string>
+    <string name="all_dear_client">Dear Customer!</string>
+    <string name="all_dear_client_without_symbol">Dear Customer</string>
+    <string name="all_call_7111">Call 7111</string>
+    <string name="all_video_call">Video-сall</string>
+    <string name="all_close">Close</string>
+    <string name="all_im_familiar_with">I am acquainted</string>
+    <string name="all_use_pin">Use the access code</string>
+    <string name="all_auth_bio_title">Halyk Authentication</string>
+    <string name="all_auth_bio_subtitle">Halyk uses Android biometric authentication</string>
+    <string name="all_yes">Yes</string>
+    <string name="all_no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="get_certificate">Get a certificate</string>
+    <string name="cerificate_account">Справка о наличии счета</string>
+    <string name="get_certificate_hint">Available balance, account</string>
+</resources>

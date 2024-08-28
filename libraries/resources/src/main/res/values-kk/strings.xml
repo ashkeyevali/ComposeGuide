@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="all_empty_form">Барлық аймақты толтырыңыз</string>
+    <string name="all_generic_error">Қате орын алды. Кейінірек қайталап көріңіз</string>
+    <string name="all_next">Ары қарай</string>
+    <string name="all_skip">Өткізу</string>
+    <string name="all_change">Ауыстыру</string>
+    <string name="all_cancel">Жабу</string>
+    <string name="all_dear_client">Құрметті тұтынушы!</string>
+    <string name="all_dear_client_without_symbol">Құрметті клиент</string>
+    <string name="all_call_7111">7111 қоңырау шалу</string>
+    <string name="all_video_call">Бейне қоңырау шалу</string>
+    <string name="all_close">Жабу</string>
+    <string name="all_im_familiar_with">Мен таныстым</string>
+    <string name="all_use_pin">Код арқылы кіру</string>
+    <string name="all_auth_bio_title">Halyk Аутентификациясы</string>
+    <string name="all_auth_bio_subtitle">Halyk Android-тың биометриялық аутентификациясын қолданады</string>
+    <string name="all_yes">Ия</string>
+    <string name="all_no">Жоқ</string>
+    <string name="cancel">Бас тарту</string>
+    <string name="get_certificate">Анықтама алу</string>
+    <string name="cerificate_account">Справка о наличии счета</string>
+    <string name="get_certificate_hint">Шоттың бар екендігі туралы, қол жетімді қалдық туралы</string>
+</resources>

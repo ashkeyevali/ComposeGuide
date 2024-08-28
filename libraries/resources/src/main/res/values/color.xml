@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="primaryColor">#2AA65C</color>
+    <color name="secondaryColor">#EAF6EF</color>
+    <color name="error">#FF0000</color>
+    <color name="orange">#fdb825</color>
+    <color name="secondarySurface">#f1f2f6</color>
+    <color name="primaryTextColor">#071222</color>
+    <color name="secondaryTextColor">#99A3B3</color>
+    <color name="tertiaryTextColor">#566681</color>
+    <color name="elementsPrimaryColor">#C8C7CC</color>
+    <color name="brandSecondary">#FEECC7</color>
+</resources>
