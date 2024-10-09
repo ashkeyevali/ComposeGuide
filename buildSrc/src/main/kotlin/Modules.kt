@@ -11,6 +11,8 @@ object Modules {
     // feature
     const val authApi = ":feature:auth:api"
     const val authImpl = ":feature:auth:impl"
+    const val movieApi = ":feature:movie:api"
+    const val movieImpl = ":feature:movie:impl"
     const val changePassword = ":feature:change_password"
     const val currencyRates = ":feature:currency-rates"
     const val setPin = ":feature:set_pin"

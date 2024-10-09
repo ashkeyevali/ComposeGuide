@@ -16,4 +16,5 @@ object PreferenceKey {
     const val PREF_ENCRYPTED_PIN = "pref_encrypted_pin"
     const val PREF_SURVEY_TO_SHOW = "pref_survey_to_show"
     const val PREF_ADS_TO_SHOW = "pref_ads_to_show"
+    const val TOKEN = "token"
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#2AA65C</color>
+    <color name="black">#000000</color>
+    <color name="toolbar_black">#081221</color>
+    <color name="whiteGrey">#f7f7f7</color>
+    <color name="white">#ffffff</color>
+    <color name="stpi_default_circle_color">#e0e6ef</color>
+    <color name="silver">#f1f2f6</color>
+    <color name="darkIndigo">#071222</color>
+    <color name="grey_10">#C8C7CC</color>
+    <color name="dark_gray">#53545b</color>
+    <color name="bluey_grey">#99a3b3</color>
+    <color name="primary_green">#2AA65C</color>
+</resources>

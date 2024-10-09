@@ -15,6 +15,7 @@ dependencies {
 
     implementation(Dependencies.Kotlin.serialization)
     implementation(Dependencies.Kotlin.coroutines)
+    implementation(libs.androidx.compose.runtime)
 
     implementation(Dependencies.Dagger.dagger)
     kapt(Dependencies.Dagger.daggerCompiler)

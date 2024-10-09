@@ -28,6 +28,7 @@ dependencies {
     debugImplementation(Dependencies.chucker)
     releaseImplementation(Dependencies.notShowChuckerinRelease)
     api(Dependencies.AndroidX.pagingRuntime)
+    implementation(libs.androidx.compose.runtime)
 
     implementation(Dependencies.Dagger.dagger)
     kapt(Dependencies.Dagger.daggerCompiler)

@@ -12,6 +12,7 @@ dependencies {
 
     implementation(Dependencies.AndroidX.core)
     implementation(Dependencies.AndroidX.fragment)
+    implementation(libs.androidx.compose.runtime)
 
 
     implementation(Dependencies.Dagger.dagger)

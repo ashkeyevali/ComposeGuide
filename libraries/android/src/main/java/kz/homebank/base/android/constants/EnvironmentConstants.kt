@@ -3,6 +3,9 @@ package kz.homebank.base.android.constants
 import kz.homebank.base.android.impl.di.AndroidComponentHolder
 
 object EnvironmentConstants {
+    val movieDbApiUrl = "https://api.themoviedb.org/3/"
+
+
 
     val isTestEnvironment = AndroidComponentHolder.getComponent().isTestEnvironment
     val hbApiUrl = if (isTestEnvironment) "https://testapi2.homebank.kz/" else "https://api2.homebank.kz/"

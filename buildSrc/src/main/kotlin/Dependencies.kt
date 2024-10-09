@@ -82,12 +82,9 @@ object Dependencies {
     }
 
     object Kotlin {
-        private const val kotlinVersion = "1.8.0"
         private const val ankoVersion = "0.10.8"
         private const val coroutinesVersion = "1.6.0"
 
-        const val koltin = "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
-        const val koltinReflect = "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion"
         const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
         const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
         const val serialization = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2"

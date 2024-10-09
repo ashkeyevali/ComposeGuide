@@ -1,8 +1,19 @@
 import com.android.build.gradle.BaseExtension
+import gradle.kotlin.dsl.accessors._624aae704a5c30b505ab3598db099943.android
 
 configure<BaseExtension> {
 
     setCompileSdkVersion(AppConfig.compileSdkVersion)
+    android {
+        buildFeatures {
+            viewBinding = true
+            buildFeatures.compose = true
+        }
+
+        composeOptions {
+            kotlinCompilerExtensionVersion = "1.5.4"
+        }
+    }
 
     defaultConfig {
 
@@ -40,6 +51,4 @@ configure<BaseExtension> {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-
-    buildFeatures.viewBinding = true
 }

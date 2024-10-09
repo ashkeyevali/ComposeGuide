@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="HomebankBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/RoundedBottom</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="RoundedBottom" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/presentation_rounded_top_dialog</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <item name="android:textColorHint">#99A3B3</item>
+        <item name="android:textSize">20sp</item>
+        <item name="colorControlNormal">#99A3B3</item>
+        <item name="colorControlActivated">@color/primaryColor</item>
+
+    </style>
+
+    <style name="CustomTextInputEditTextStyle" parent="ThemeOverlay.Material3.MaterialTimePicker.Display.TextInputEditText">
+        <item name="colorControlNormal">@color/primaryColor</item>
+        <item name="colorControlActivated">@color/primaryColor</item>
+        <item name="colorControlHighlight">@color/primaryColor</item>
+    </style>
+
+
+    <style name="ThemeOverlay.App.TextInputLayout" parent="">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorOnSurface">@color/primaryColor</item>
+        <item name="colorError">@color/primaryColor</item>
+    </style>
+
+
+    <style name="Widget.TextInputLayout.V3" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="Widget.TextInputEditText.V3" parent="@style/Widget.Design.TextInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="Widget.TextInputLayout.UserInfo" parent="Widget.TextInputLayout.V3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="background">@color/primaryColor</item>
+    </style>
+
+    <style name="Widget.TextInputEditText.UserInfo" parent="Widget.TextInputEditText.V3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle2</item>
+    </style>
+
+    <style name="AppModalStyle2" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_deposit_bottom_sheet</item>
+    </style>
+
+</resources>

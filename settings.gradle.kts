@@ -8,6 +8,7 @@ pluginManagement {
             }
         }
         mavenCentral()
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
         gradlePluginPortal()
     }
 }
@@ -16,6 +17,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
     }
 }
 
@@ -25,6 +27,13 @@ include(":base:data:network:api")
 include(":base:data:network:impl")
 include(":base:domain")
 include(":base:domain")
+include(":base:presentation")
+include(":base:data:preference:api")
+include(":base:data:preference:impl")
+include(":feature:auth:api")
+include(":feature:auth:impl")
+include(":feature:movie:api")
+include(":feature:movie:impl")
 include(":module_injector")
 include(":libraries:android")
 include(":libraries:di")

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ivAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:src="@drawable/ic_clear_black" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:fontFamily="@font/manrope_bold"
+        android:textColor="@color/tertiaryTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="@string/all_empty_form" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/manrope_medium"
+        android:gravity="center"
+        android:textColor="@color/tertiaryTextColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:text="@string/all_empty_form" />
+
+
+    <Button
+        android:id="@+id/btnPrimary"
+        style="@style/Button.Secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_secondary_btn"
+        android:gravity="center"
+        tools:text="@string/all_next" />
+
+    <Button
+        android:id="@+id/btnSecondary"
+        style="@style/Button.Tertiary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/manrope_medium"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/all_next"
+        tools:visibility="visible"/>
+
+</LinearLayout>

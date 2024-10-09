@@ -2,4 +2,5 @@
 plugins {
     id(libs.plugins.android.application.get().pluginId).apply(false)
     id(libs.plugins.jetbrains.kotlin.android.get().pluginId).apply(false)
+
 }
