@@ -42,6 +42,4 @@ internal class MovieDetailViewModel  @Inject constructor(
             }
         }
     }
-
-
 }

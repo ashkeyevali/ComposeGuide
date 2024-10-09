@@ -30,13 +30,12 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kz.homebank.feature.auth.impl.presentation.view_model.LoginViewModel
+import kz.homebank.feature.auth.impl.presentation.view_model.model.LoginState
 import kz.homebank.libraries.resources.Theme
+import login.models.LoginEvent
 
 @Composable
-internal fun LoginView(viewModel: LoginViewModel) {
-    val state by viewModel.viewState.collectAsState()
-
-
+internal fun LoginView(state: LoginState, eventHandler: (LoginEvent) -> Unit) {
     Column(modifier = Modifier.padding(30.dp), horizontalAlignment = Alignment.CenterHorizontally){
         Text("Login Now", color = Theme.colors.secondaryTextColor,
             fontSize = 24.sp, fontWeight = FontWeight.Bold, )
@@ -61,7 +60,7 @@ internal fun LoginView(viewModel: LoginViewModel) {
             placeholder = { Text(text = "Your login", color = Theme.colors.hintTextColor) },
             shape = RoundedCornerShape(10.dp),
             onValueChange = {
-                viewModel.obtainEmailChanged(it)
+                eventHandler(LoginEvent.EmailChanged(it))
             })
 
         Spacer(modifier = Modifier.height(24.dp))
@@ -86,14 +85,14 @@ internal fun LoginView(viewModel: LoginViewModel) {
                     imageVector = if (state.passwordHidden) Icons.Default.Lock else Icons.Default.Clear,
                     contentDescription = "Password hidden",
                     modifier = Modifier.clickable {
-                        viewModel.showPassword()
+                        eventHandler(LoginEvent.PasswordShowClicked)
                     },
                     tint = Theme.colors.hintTextColor,
                 )
             },
             shape = RoundedCornerShape(10.dp),
             onValueChange = {
-                viewModel.obtainPasswordChanged(it)
+                eventHandler(LoginEvent.PasswordChanged(it))
             })
 
         Spacer(modifier = Modifier.height(84.dp))
@@ -118,7 +117,7 @@ internal fun LoginView(viewModel: LoginViewModel) {
             ),
             enabled = !state.isSending,
             shape = RoundedCornerShape(10.dp),
-            onClick = { viewModel.sendLogin() }) {
+            onClick = { eventHandler(LoginEvent.LoginClicked) }) {
             Text(text = "Login Now", color = Theme.colors.primaryTextColor, fontSize = 16.sp, fontWeight = FontWeight.Bold)
 
         }
