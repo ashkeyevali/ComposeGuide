@@ -2,7 +2,6 @@ package presentation.movie_detail.view
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.collectAsState
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import di.MoviesComponentHolder
@@ -14,11 +13,9 @@ import presentation.popular_movies.PopularMovieViewModel
 internal fun MovieDetailScreen(navHostController: NavHostController, movieId: Int) {
 
     val viewModel: MovieDetailViewModel = viewModel(factory = VmFactory { MoviesComponentHolder.getComponent().movieDetailsViewModel }  )
-    val state = viewModel.viewState.collectAsState()
-
     LaunchedEffect(key1 = movieId) {
         viewModel.getMovieDetail(movieId)
     }
 
-    MovieDetailView(state.value)
+    MovieDetailView(viewModel)
 }

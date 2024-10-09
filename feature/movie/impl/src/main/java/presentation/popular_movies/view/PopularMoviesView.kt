@@ -22,11 +22,10 @@ import androidx.compose.ui.unit.sp
 import kz.homebank.feature.movie.impl.data.model.MovieResponse
 import kz.homebank.libraries.resources.Theme
 import presentation.popular_movies.PopularMovieViewModel
-import presentation.popular_movies.model.PopularMovieState
-import presentation.popular_movies.model.PopularMoviesEvent
 
 @Composable
-internal fun PopularMoviesView(state: PopularMovieState, eventHandler: (PopularMoviesEvent) -> Unit) {
+internal fun PopularMoviesView(viewModel: PopularMovieViewModel) {
+    val state by viewModel.viewState.collectAsState()
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -53,7 +52,8 @@ internal fun PopularMoviesView(state: PopularMovieState, eventHandler: (PopularM
         }
         else {
             MovieList(movies = state.movies) {
-                eventHandler(PopularMoviesEvent.MovieClicked(it.id))
+                viewModel.onNavigateToMovieDetail(it.id)
+
             }
         }
     }

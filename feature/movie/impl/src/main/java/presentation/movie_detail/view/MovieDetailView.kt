@@ -22,10 +22,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kz.homebank.libraries.resources.Theme
 import presentation.movie_detail.MovieDetailViewModel
-import presentation.movie_detail.model.MovieDetailState
 
 @Composable
-internal fun MovieDetailView(state: MovieDetailState) {
+internal fun MovieDetailView(viewModel: MovieDetailViewModel) {
+    val state by viewModel.viewState.collectAsState()
 
     Column {
         if (state.isLoading) {
